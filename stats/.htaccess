@@ -1,0 +1,7 @@
+AuthName "domas.xyz statistics"
+AuthType Basic
+AuthUserFile /home/domas/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>
